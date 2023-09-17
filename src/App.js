@@ -1,6 +1,13 @@
+import NewExpense from "./components/NewExpense/NewExpense";
 import Expenses from "./components/Expenses/Expenses";
 
 const App = () => {
+  const myStyles = {    
+    color: 'white',
+    fontSize: '3rem',
+    padding: '2px',
+  };
+
   const expenses = [
     {
       id: "e1",
@@ -29,10 +36,11 @@ const App = () => {
       amount: 500,
       date: new Date(2020, 9, 14),
     },
+
   ];
   return (
     <div>
-      <h1>Let's get started!</h1>
+      <NewExpense/>
 
       <Expenses items={expenses}/>
     </div>
@@ -40,3 +48,4 @@ const App = () => {
 };
 
 export default App;
+ 
