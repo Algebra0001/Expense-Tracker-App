@@ -4,12 +4,16 @@ import ExpenseDate from "../Expenses/ExpenseDate";
 import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
+  const myDate = props.date;
+  const myTitle = props.title;
+  const myAmount = props.amount;
+
   return (
     <Card className="expense-item">
-      <ExpenseDate date={props.date} />
+      <ExpenseDate date={myDate} />
       <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">$ {props.amount}</div>
+        <h2>{myTitle}</h2>
+        <div className="expense-item__price">${myAmount}</div>
       </div>
     </Card>
   );
