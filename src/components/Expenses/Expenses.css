@@ -1,8 +1,11 @@
 .expenses {
   width: 50rem;
   max-width: 95%;
-  background-color: #000000;
+  background-color: 0;
   padding: .025rem 0.75rem;
   margin: 2rem auto;
   
+}
+.expenses p{
+  color: white;
 }

@@ -31,7 +31,7 @@ const DUMMY_EXPENSES = [
     date: new Date(2020, 9, 14),
   },
 ];
-
+ 
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
